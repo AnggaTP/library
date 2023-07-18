@@ -1,0 +1,89 @@
+:root{
+    --border:1px solid red;
+    font-size: 16px;
+}
+
+body{
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: grid;
+    grid-template-rows: 60px 1fr;
+    height: 100vh;
+}
+
+.container > .Navbar{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    background-color: #004643;
+    position: sticky;
+    color: #fffffe;
+    top: 0;
+}
+
+.Navbar > .nav-title{
+    justify-self: center;
+    align-self: center;
+    font-size: 2rem;
+
+}
+
+.Navbar > .first-button{
+    justify-self: center;
+    align-self: center;
+}
+
+.Navbar > .sec-button{
+    justify-self: center;
+    align-self: center;
+}
+
+.button > button{
+    width: 150px;
+    height: 30px;
+    border: none;
+    background-color: #f9bc60;
+    color: #001e1d;
+    border-radius: 2px;
+    font-weight: 700;
+
+}
+
+.output{
+    background-color: #abd1c6;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.form-card{
+    background-color: bisque;
+    display: none;
+    grid-template-rows: max-content 4fr;
+    height: 250px;
+    width: 200px;
+    padding: 10px;
+    justify-content: center;
+    position: fixed;
+    top: 200px;
+    left: 550px;
+    z-index: 1;
+}
+
+.form-card > .title{
+    align-self: flex-end;
+    text-align: center;
+}
+
+form{
+    display: grid;
+    align-items: center;
+}
+
+.submitbtn{
+    width: 100%;
+}
